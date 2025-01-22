@@ -1,0 +1,109 @@
+#cp1-title{
+    font-family: 'Courier New', Courier, monospace;
+    font-style: bold;
+    text-align: center;
+    padding: 12px;
+}
+#cp1-1{
+    background-color: #FF3166;
+    color: white;
+    text-align: center;
+    padding: 24px;
+    font-family: 'Courier New', Courier, monospace;
+}
+#cp1-2{
+    background-color:#FF725C;
+    color: white;
+    text-align: center;
+    padding: 24px;
+    font-family: 'Courier New', Courier, monospace;
+}
+#cp1-3{
+    background-color:#FFB437;
+    color: white;
+    text-align: center;
+    padding: 24px;
+    font-family: 'Courier New', Courier, monospace;
+}
+#cp1-4{
+    background-color:#F9D388;
+    color: white;
+    text-align: center;
+    padding: 24px;
+    font-family: 'Courier New', Courier, monospace;
+}
+#cp1-5{
+    background-color: #FF8F8F;
+    color: white;
+    text-align: center;
+    padding: 24px;
+    font-family: 'Courier New', Courier, monospace;
+}
+#cp2-title{
+    font-family: cursive;
+    font-style: bold;
+    text-align: center;
+    padding: 12px;
+}
+#cp2-1{
+    background-color:#D30E92;
+    color: white;
+    text-align: center;
+    padding: 24px;
+    font-family: cursive
+}
+#cp2-2{
+    background-color:#D876BC;
+    color: white;
+    text-align: center;
+    padding: 24px;
+    font-family: cursive
+}
+#cp2-3{
+    background-color:#FFC0EE;
+    color: white;
+    text-align: center;
+    padding: 24px;
+    font-family: cursive
+}
+#cp2-4{
+    background-color:#D4A1FE;
+    color: white;
+    text-align: center;
+    padding: 24px;
+    font-family: cursive
+}
+#cp2-5{
+    background-color: #7A3E8D;
+    color: white;
+    text-align: center;
+    padding: 24px;
+    font-family: cursive
+}
+#cp3-title{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-style: bold;
+    text-align: center;
+    padding: 12px;
+}
+#cp3-1{
+    background-color:#40E0D0;
+    color: white;
+    text-align: center;
+    padding: 24px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+}
+#cp3-2{
+    background-color:#008B8B;
+    color: white;
+    text-align: center;
+    padding: 24px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+}
+#cp3-3{
+    background-color:#5F9EA0;
+    color: white;
+    text-align: center;
+    padding: 24px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+}
