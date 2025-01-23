@@ -25,9 +25,14 @@
     display: inline-block;
 }
 /* Drill 5 - Write your code solution below */
-.d5-div{
-    width: 250px;
+.d5-div {
     display: inline-block;
+}
+#d5-div1 {
+    width: 250px;
+}
+#d5-div2 {
+    width: 225px;
 }
 
 /* Drill 6 - Write your code solution below */
