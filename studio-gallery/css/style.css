@@ -35,6 +35,16 @@
     width:80px ;
     display: block;
 }
+#frame-4 {
+    border: 10px outset white;
+    margin: 10px 10px;
+    box-shadow:5px 5px 10px grey;
+}
+#frame-4 div {
+    background-color:lightcoral;
+    padding: 12px;
+}
+
 #frame-3 {
     border: 10px outset #7b68ee;
     margin: 50px 20px;
