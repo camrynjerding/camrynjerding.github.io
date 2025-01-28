@@ -7,7 +7,7 @@
     Good luck, and have fun!
 */
 #frame-1 {
-    border: 10px outset #E6E6FA;
+    border: 10px outset lavender;
     margin: 50px 20px;
     box-shadow:5px 5px 10px grey ;
 }
@@ -23,28 +23,35 @@
 }
 #frame-2 {
     border: 10px outset #c71585;
-    margin: 50px 20px;
+    margin: 20px 20px;
     box-shadow: 5px 5px 10px grey;
 }
 #frame-2 div {
     background-color: #F5F5F5;
-    padding: 12px;
+    padding: 24px;
     border: 5px solid lightcoral;
 }
 #frame-2 img {
-    width:80px ;
+    width:100% ;
     display: block;
 }
 #frame-4 {
     border: 10px outset white;
-    margin: 10px 10px;
+    margin: 24px 10px;
     box-shadow:5px 5px 10px grey;
 }
 #frame-4 div {
-    background-color:lightcoral;
-    padding: 12px;
+    background-color:lightgrey;
+    padding: 8px;
 }
-
+#text-4 {
+    color: black;
+    font-family: 'Courier New', Courier, monospace ;
+    line-height: 2px;
+}
+#colors {
+    color: #c71585;
+}
 #frame-3 {
     border: 10px outset #7b68ee;
     margin: 50px 20px;
