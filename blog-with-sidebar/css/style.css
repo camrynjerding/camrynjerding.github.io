@@ -4,6 +4,7 @@
 }
 /* Body */
 body{
+    grid: ;
     font-family: 'Times New Roman', Times, serif;
     background-color: #fdf7ff;
     color: #333;
@@ -87,8 +88,8 @@ body{
 .sidebar h3 {
     color: palevioletred;
     font-size: 18px;
-    margin-bottom: 15px;    paddig-bottom: 10px solid black;
-}
+    margin-bottom: 15px; 
+}   
 ul li {
     margin-bottom: 10px;
 }
@@ -98,6 +99,7 @@ ul li a {
     font-size: small;
     font-weight: bold;
 }
-ul li a :hover {
+ul li a:hover {
     color: #ff2ba3;
+    text-decoration: underline #ff2ba3;
 }
