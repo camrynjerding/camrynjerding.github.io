@@ -1,0 +1,77 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f7fa;
+}
+.product-page {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 10px 15px grey;
+}
+/* Left Column */
+.product-thumbnails img {
+    width: 100%;
+    margin-bottom: 12px;
+    border-radius: 8px;
+}
+/* Center Column */
+.product-image img {
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px grey;
+}
+.product-info {
+    display: flex;
+    flex-direction: column;
+    background-color: #fdf6f6;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px grey;
+}
+.product-info h1{
+    font-size: 28px;
+    color: pink;
+    margin-bottom: 12px;
+}
+.seller-info p {
+    margin: 6px 0;
+}
+.seller-info a {
+    text-decoration: none;
+    color:plum;
+    font-weight: bold;
+}
+.seller-info a:hover {
+    color: palevioletred;
+}
+.price {
+    font-size: 22px;
+    font-weight: bold;
+    color: #28a745;
+    margin: 12px 0;
+}
+.condition {
+    font-family: 18px;
+    color: gray;
+    margin-bottom: 24px;
+}
+/* Buttons */
+.buttons button {
+    background-color: #ffb6b9;
+    color: white;
+    border: none;
+    padding: 14px 24px;
+    margin: 8px 0;
+    border-radius: 30px;
+    font-size: 18px;
+}
+.buttons button:hover {
+    background-color: #ff6f61;
+}
