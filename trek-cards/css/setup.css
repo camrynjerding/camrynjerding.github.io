@@ -1,0 +1,77 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    font-family: sans-serif;
+}
+
+#section-1 {
+    padding: 24px;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+#section-1 {
+    background: url("../images/treasure-map.webp");
+    background-size: cover;
+    background-position: center center;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+#section-1 .example-card {
+    max-width: 350px;
+    margin: 16px;
+    box-shadow: 4px 4px 8px #00000088;
+}
+.card-style-1 {
+    background-color: #d4f1d4;
+    width: 350px;
+    box-shadow: 0 4px 6px #00000088;
+    transition: transform .5s ease-in-out;
+}
+.card-style-1:hover{
+    transform: translateY(-10px);
+}
+.card-style-1 h2 {
+    font-size: x-large;
+    padding: 15px;
+    color: black;
+    text-align: center;
+}
+.card-style-1 img {
+    width: 100%;
+    height: auto;
+}
+.card-style-1 p {
+    font-size: medium;
+    padding: 0px 24px;
+    color: black;
+    line-height: 1.5;
+}
+.card-style-1 a {
+    display: block;
+    font-size: x-large;
+    background-color: green;
+    color: white;
+    text-decoration: none;
+    padding: 24px 20px;
+    text-align: center;
+    font-weight: bold;
+    transition: background-color .3s ease, transform .3s ease;
+}
+.card-style-1 a:hover {
+    background-color: darkolivegreen;
+    transform: scale(1.05)
+}
+
+
+     
