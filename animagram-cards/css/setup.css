@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Shadows+Into+Light&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    font-family: sans-serif;
+}
+
+#section-2 {
+    padding: 24px;
+    min-height: 100vh;
+}
+
+#section-2 {
+    background: url("../images/paw-prints.jpg");
+    background-size: cover;
+    background-position: center center;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+#section-2 .example-card {
+    max-width: 358px;
+    margin: 16px;
+}
+
+.card-style-2 .animagram-header .logo {
+    font-size: 36px;
+    font-family: 'Shadows Into Light';
+    font-weight: bold;
+    display: inline-block;
+    border: 3px solid black;
+    border-radius: 50%;
+    width: 66px;
+    text-align: center;
+}
+
+.card-style-2 .animagram-header .brand-name {
+    font-family: 'Acme';
+    font-weight: bold;
+}
+.card-style-2 { 
+    background-color: white;
+    border-radius: 30px;
+    box-shadow: 0 2px 4px grey;
+    width: 360px;
+    margin: 16px;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+}
+.animagram-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+    justify-content: space-between;
+    font-size: x-large;
+}
+.profile-pic-container {
+    width: 100%;
+    margin-bottom: 12px;
+}
+.profile-pic-container img {
+    display: block;
+    border-radius: 50%;
+    height: 200px;
+    width: auto;
+    max-width: 100%;
+    margin: 0 auto;
+}
+.card-style-2 {
+    margin-bottom: 8px;
+    font-size: medium;
+    font-weight: bold;
+    text-align: center;
+}
+.card-style-2 p {
+    margin-bottom: 16px;
+    font-size: small;
+    color: #333;
+    line-height: 1.5;
+    text-align: center;
+}
+.animagram-footer {
+    display: flex;
+    padding-top: 12px;
+    border-top: 1px solid white;
+    text-align: center;
+}
+.animagram-footer {
+    display: flex;
+    justify-content: space-between;
+    font-size: larger;
+}
