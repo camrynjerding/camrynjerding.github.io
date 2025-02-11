@@ -13,6 +13,8 @@ body {
     background-image: url("../images/puppy.JPG");
     align-items: center;
     justify-content: flex-start;
+    height: 90vh;
+    background-size: cover;
 }
 .hero-content {
     padding: 20px;
@@ -45,15 +47,20 @@ body {
     flex-direction: column;
     align-items: flex-end;
     justify-content: center;
+    height: 90vh;
+    background-size: cover;
 }
 .hero-right-flex-column .hero-content{
     text-align: right;
     margin-right: 20px;
 }
+/* hero 3 */
 .hero-center-flex {
     background-image: url("../images/cat\ in\ hat.jpg");
     justify-content: center;
     align-items: center;
+    height: 90vh;
+    background-size: cover;
 }
 .hero-center-flex .hero-content {
     text-align: center;
