@@ -1,0 +1,61 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    color: white;
+}
+.hero {
+    height: 100vh;
+    display: flex;
+    background-size: cover;
+    background-position: center;
+}
+.hero-left-flex {
+    background-image: url("../images/puppy.JPG");
+    align-items: center;
+    justify-content: flex-start;
+}
+.hero-content {
+    padding: 20px;
+    max-width: 600px;
+    text-align: left;
+}
+.hero h1 {
+    font-size: xx-large;
+    margin-bottom: 10px;
+}
+.hero p {
+    font-size: medium;
+    margin-bottom: 20px;
+}
+.next-hero { 
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: darkolivegreen;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+
+}
+.next-hero:hover{
+    background-color: darkgreen;
+}
+/* Hero 2 */
+.hero-right-flex-column {
+    background-image: url("../images/birds.jpg");
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+}
+.hero-right-flex-column .hero-content{
+    text-align: right;
+    margin-right: 20px;
+}
+.hero-center-flex {
+    background-image: url("../images/cat\ in\ hat.jpg");
+    justify-content: center;
+    align-items: center;
+}
+.hero-center-flex .hero-content {
+    text-align: center;
+    padding: 20px;
+}
