@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Baskervville+SC&family=Creepster&display=swap');
+body {
+    margin: 0;
+    padding: 0;
+}
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+}
+nav a {
+    text-decoration: none;
+    margin: 0 10px;
+    transition: color .3s ease, transform .2s ease;
+}
+nav a:hover {
+    transform: scale(1.1);
+}
+/* Sculptors Haven */
+.sculptor-navbar {
+    background-color: #a67b5b;
+    color:white;
+    padding: 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.sculptor-navbar a {
+    color: white;
+    font-weight: bold;
+}
+.sculptor-navbar a:hover {
+    color: #d2b48c;
+}
+/* AngelEars */
+.angel-navbar {
+    background-color: #ffd700;
+    color: black;
+    padding: 10px;
+    font-family: 'Courier New', Courier, monospace;
+}
+.angel-navbar a {
+    color: black;
+    font-weight: bolder;
+    text-align: center;
+}
+.angel-navbar a:hover {
+    color: #ff4500;
+}
+.subscribe-btn {
+    background-color: #ff5733;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-align: center;
+}
+.subscribe-btn:hover {
+    background-color: #ff8c42;
+}
+/* Tailored Spooks */
+.spooks-header {
+    text-align: center;
+    background-color: black;
+    color: orange;
+    padding: 10px;
+    font-weight: bold;
+    font-family:"Creepster", serif ;
+    font-size: larger;
+}
+.spooks-navbar {
+    background-color:gray;
+    color: white;
+    padding: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.spooks-navbar a,
+.spooks-bottom-navbar a {
+    color: white;
+    font-weight: bold;
+}
+.spooks-navbar a:hover {
+    color: orange;
+}
+.signin-btn {
+    background-color: orange;
+    color: black;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-align: center;
+}
+.signin-btn:hover {
+    background-color: darkorange;
+}
+.spooks-bottom-navbar {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    font-size: small;
+}
