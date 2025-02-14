@@ -73,9 +73,11 @@ body {
     box-shadow: 0 4px 6px grey;
 }
 .card:hover {
-    transform: scale(1.05)
+    transform: scale(1.05);
+    box-shadow: 0 4px 6px black;
 }
 .card h2 {
+    font-family: "Baskervville SC", serif;
     font-size: 30px;
     margin-bottom: 10px;
 }
