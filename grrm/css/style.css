@@ -447,10 +447,12 @@ body {
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-areas: 
             "header header header"
-            "nav nav nav"
-            "main main main"
+            "navbar navbar navbar"
+            "banner banner banner"
             "card-1 card-2 card-3"
-            "footer footer footer";
+            "aside blog blog"
+            "footer footer footer"
+            "bottom bottom bottom";
     }
     /* Reducing H1 font size */
     #header h1 {
@@ -476,12 +478,13 @@ body {
         grid-template-columns: 1fr;
         grid-template-areas: 
             "header"
-            "nav"
-            "main"
+            "navbar"
+            "banner"
             "card-1"
             "card-2"
             "card-3"
-            "footer";
+            "footer"
+            "bottom";
     }
     /* Hiding Sheield Image and Search */
     #sheild-image, #search-bar, #search-button {
