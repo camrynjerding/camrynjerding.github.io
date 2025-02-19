@@ -486,7 +486,7 @@ body {
             "footer"
             "bottom";
     }
-    /* Hiding Sheield Image and Search */
+    /* Hiding Sheield Image and Search. */
     #sheild-image, #search-bar, #search-button {
         display: none;
     }
@@ -506,7 +506,7 @@ body {
         flex: 24px;
         text-align: center;
     }
-    /* Remove Padding, Margin... */
+    /* Remove Padding, Margin.... */
     #banner-container {
         padding: 0;
         margin: 0;
