@@ -76,7 +76,6 @@ img {
 }
 /* Adoption Content: Rover */
 .adoption-content-rover {
-    display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
@@ -87,6 +86,7 @@ img {
     background-color: #f8f8f8;
 }
 .adoption-content-rover h2 {
+    text-align: center;
     font-family: "Fuzzy Bubbles", serif;
     font-size: 150px;
     margin-bottom: 20px;
