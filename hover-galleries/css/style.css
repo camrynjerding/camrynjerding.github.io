@@ -9,9 +9,12 @@ body {
 }
 .cards {
     display: flex;
+    padding: 24px;
+}
+.cards img {
+    display: flex;
     justify-content: center;
     gap: 20px;
-    width: 200px;
     height: 300px;
     border-radius: 10px;
     transition: all .03s ease;
