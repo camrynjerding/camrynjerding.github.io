@@ -33,7 +33,7 @@ body {
     text-align: center;
     font-size: 20px;
     padding: 50px 10px;
-    box-shadow: 0 0 10px cyan;,
+    box-shadow: 0 0 10px cyan;
     transition: all .3 ease-in-out;
 }
 .card-neon:hover {
