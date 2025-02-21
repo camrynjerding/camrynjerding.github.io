@@ -16,8 +16,9 @@ body {
     justify-content: center;
     gap: 20px;
     height: 300px;
-    border-radius: 10px;
+    border-radius: 30px;
     transition: all .03s ease;
+    padding: 15px;
 }
 /* Spinny Cards */
 .card-spin {
