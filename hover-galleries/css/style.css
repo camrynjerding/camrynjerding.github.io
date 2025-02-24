@@ -47,26 +47,14 @@ body {
 }
 /* Flip Cards */
 .card-flip {
-    perspective: 1000px;
-    position: relative;
-}
-.card-flip .inner {
-    transition: transform .6s;
-}
-.card-flip:hover .inner {
-    transform: rotateY(180deg'angle');
-}
-.card-flip .front, .card-flip .back { 
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 10px;
-}
-.card-flip .back {
-    background-color: #ffcc00;
+    background-color: darkred;
     color: black;
-    transform: rotateY(180deg 'angle');
 }
+.card-flip:hover {
+    box-shadow: 8px 8px 8px black;
+    z-index: 1;
+    border: 4px solid black;
+}
+
+
+
