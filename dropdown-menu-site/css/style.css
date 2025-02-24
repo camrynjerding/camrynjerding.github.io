@@ -135,16 +135,28 @@ body {
 .cons ul {
     margin-left: 20px;
 }
+.pros li, 
+.cons li {
+    margin-bottom: 10px;
+}
 .image-slider .thumbnail-container {
     display: flex;
     gap: 25px;
 }
 .thumbnail-container {
     height: 200px;
-    width:200px
+    width:200px;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 .slide {
     flex: 1;
+    border-radius: 5px;
+}
+.slide:hover {
+    border: 3px solid black ;
+
 }
 .main-image{
     max-width: 70%;
