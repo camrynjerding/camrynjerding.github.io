@@ -205,6 +205,7 @@ nav ul li a:hover {
 .footer-section {
     flex: 1;
     min-width: 200px;
+    text-align: center;
 }
 .footer-section h3 {
     font-size: 1.3rem;
@@ -227,11 +228,11 @@ nav ul li a:hover {
 .social-icons a:hover {
     color: #BCBEC0;
 }
-.footer-bottom {
+.footer-bottom-container {
     text-align: center;
     margin-top: 3rem;
     padding-top: 1.5rem;
-    border-top: 1px solid rgba (255,255,255,.1);
+    border-top: 1px solid grey;
 }
 .footer-logo {
     font-family:"goodlife-brush", sans-serif; 
