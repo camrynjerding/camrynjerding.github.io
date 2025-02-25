@@ -37,6 +37,7 @@ h3,h4 {
 }
 p {
     margin-bottom: 1em;
+    font-size: 1rem;
 }
 /* Header & Navigtation */
 .header-container {
@@ -53,9 +54,10 @@ p {
      header effect where the navigation stays visible  as users scroll down */
 .logo {
     font-family:"goodlife-brush", sans-serif;
-    font-size: 1.8rem;
+    font-size: 2rem;
     color: #FFFFFF;
     text-decoration: none;
+    margin-left: 24px;
 }
 nav ul { 
     display: flex;
@@ -68,7 +70,7 @@ nav ul li a {
     color: #ffffff;
     text-decoration: none;
     font-family: "ff-market-web-pro-condensed", sans-serif;
-    font-size: 1rem;
+    font-size: 1.2rem;
     transition: color .3s ease;
 }
 nav ul li a:hover {
@@ -116,8 +118,9 @@ nav ul li a:hover {
     padding: .8rem 1.8rem;
     border-radius: 4px;
     text-decoration: none;
-    font-size: Market Pro Condensed medium, sans-serif;
+    font-family: Market Pro Condensed medium, sans-serif;
     transition: background-color .3s ease;
+    font-size: 1rem;
 }
 .cta-button:hover {
     background-color: #5a0d1c;
@@ -148,7 +151,7 @@ nav ul li a:hover {
 }
 .welcome-text h3 {
     color: #7b1126;
-    font-size: 1.3rem;
+    font-size: 2em;
     margin-bottom: 1.5rem;
 }
 /* Values */
@@ -168,6 +171,7 @@ nav ul li a:hover {
 }
 .value-card {
     flex: 1;
+    margin: .5rem;
     background-color: #FFFFFF;
     border-radius: 8px;
     overflow: hidden;
@@ -181,7 +185,7 @@ nav ul li a:hover {
     padding: 2rem;
 }
 .value-card h3 {
-    font-size: 1.5rem;
+    font-size: 2rem;
     color: #7b1126;
     margin-bottom: 1 rem;
 }
@@ -208,7 +212,7 @@ nav ul li a:hover {
     text-align: center;
 }
 .footer-section h3 {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     margin-bottom: 1.5rem;
     color: #ffffff;
 }
@@ -236,7 +240,7 @@ nav ul li a:hover {
 }
 .footer-logo {
     font-family:"goodlife-brush", sans-serif; 
-    font-size: 1.5rem;
+    font-size: 2rem;
     color: #FFFFFF;
     margin-bottom: 1rem;
 }
