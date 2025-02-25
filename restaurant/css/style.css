@@ -1,0 +1,287 @@
+/* General Style */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+        /* box sizing: border-box makes an element's width and height 
+        include its padding and border, not just its content. This from what i 
+        researched will help me create a more predictable layout since a 
+        300px- wide element will stay 300px total even after i add padding or 
+        borders and its applied to all elemets using the universal star 
+        selector to ensure consistant sizing over the full website */
+body {
+    font-family: "montserrat", sans-serif;
+    color: #231f20;
+    line-height: 1.6;
+}
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+/* Typography */
+h1,h2 {
+    font-family: "goodlife-brush", sans-serif;
+    margin-bottom: .5em;
+}
+        /* I found when searching for solutions to my image widths and scaling
+        problems during other projects that using the em value instead of 
+        pixels helps scale my font proportionally when the base font size 
+        changes. This makes the design more adaptable and responsive. For 
+        example, if an element has a fnt of 16px then the .5em would be 
+        equivalent to 8px making it useful to create proportional spacing */
+h3,h4 {
+    font-family: "ff-market-web-pro-condensed", sans-serif;
+    margin-bottom: .5em;
+}
+p {
+    margin-bottom: 1em;
+}
+/* Header & Navigtation */
+.header-container {
+    background-color: #231f20;
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 5px gray ;
+}
+     /*This means the header is fixed at the top of the browser window with
+     no space btn the header and the top edge of the screen creating a sticky 
+     header effect where the navigation stays visible  as users scroll down */
+.logo {
+    font-family:"goodlife-brush", sans-serif;
+    font-size: 1.8rem;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+nav ul { 
+    display: flex;
+    list-style: none;
+}
+nav ul li {
+    margin-left: 1.5rem;
+}
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-family: "ff-market-web-pro-condensed", sans-serif;
+    font-size: 1rem;
+    transition: color .3s ease;
+}
+nav ul li a:hover {
+    color: #BCBEC0;
+}
+.mobile-menu-btn {
+    display: none;
+    background: none;
+    border: none;
+    color: #FFFFFF;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+/* HERO SECTION */
+.hero {
+    height: 80vh;
+    background:linear-gradient(0deg, #1115, #111),url("../images/header.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 70px;
+}
+.hero-content {
+    color: #FFFFFF;
+    max-width: 800px;
+    padding: 2rem;
+}
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+}
+.hero p { 
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+.cta-button {
+    display: inline-block;
+    background-color: #7B1126;
+    color: #FFFFFF;
+    padding: .8rem 1.8rem;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: Market Pro Condensed medium, sans-serif;
+    transition: background-color .3s ease;
+}
+.cta-button:hover {
+    background-color: #5a0d1c;
+}
+/* WELCOME */
+.welcome {
+    padding: 5rem 0;
+    background-color: #FFFFFF;
+}
+.welcome-container {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+.welcome-image {
+    flex: 1;
+    min-height: 400px;
+    background-image: url(../images/img\ 1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.welcome-text {
+    flex: 1;
+}
+.welcome-text h2 {
+    font-size: 2.5rem;
+    color: #231f20;
+}
+.welcome-text h3 {
+    color: #7b1126;
+    font-size: 1.3rem;
+    margin-bottom: 1.5rem;
+}
+/* Values */
+.values {
+    padding: 5rem 0;
+    background-color: #f8f8f8;
+}
+.values h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+}
+.values-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+}
+.value-card {
+    flex: 1;
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px grey;
+    transition: transform .3s ease;
+}
+.value-card:hover {
+    transform: translatey(-10px)
+}
+.value-card-inner {
+    padding: 2rem;
+}
+.value-card h3 {
+    font-size: 1.5rem;
+    color: #7b1126;
+    margin-bottom: 1 rem;
+}
+.value-card-icon {
+    font-size: 3rem;
+    color: #231f20;
+    margin-bottom: 1.5rem;
+}
+/* Footer */
+.footer {
+    background-color: #231f20;
+    color: #FFFFFF;
+    padding: 3rem 0 1.5rem;
+}
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+.footer-section {
+    flex: 1;
+    min-width: 200px;
+}
+.footer-section h3 {
+    font-size: 1.3rem;
+    margin-bottom: 1.5rem;
+    color: #ffffff;
+}
+.footer-section p {
+    margin-bottom: .5rem;
+}
+.socials-icons {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1 rem;
+}
+.social-icons a {
+    color: #FFFFFF;
+    font-size: 1.2rem;
+    transition: color .3s ease;
+}
+.social-icons a:hover {
+    color: #BCBEC0;
+}
+.footer-bottom {
+    text-align: center;
+    margin-top: 3rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid rgba (255,255,255,.1);
+}
+.footer-logo {
+    font-family:"goodlife-brush", sans-serif; 
+    font-size: 1.5rem;
+    color: #FFFFFF;
+    margin-bottom: 1rem;
+}
+/* Media Quries */
+@media (max-width:768px) {
+    nav ul {
+        display: none;
+    }
+    .mobile-menu-btn {
+        display: block;
+    }
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+    .welcome-container {
+        flex-direction: column;
+    }
+    .welcome-image, .welcome-text {
+        flex: none;
+        width: 100%;
+    }
+    .values-container {
+        flex-direction: column;
+    }
+    .value-card {
+        margin-bottom:1.5
+    }
+    .footer-section {
+        flex:100%;
+        margin-bottom: 2rem;
+    }
+}
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 2rem;
+    }
+    .hero p {
+        font-size: 1rem;
+    }
+    .welcome, .values {
+        padding: 3rem 0
+    }
+    .value-card-inner {
+        padding: 1.5rem
+    }
+    .welcome-text h2 {
+        font-size: 2rem;
+    }
+}
