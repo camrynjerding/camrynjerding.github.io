@@ -54,7 +54,7 @@ p {
      header effect where the navigation stays visible  as users scroll down */
 .logo {
     font-family:"goodlife-brush", sans-serif;
-    font-size: 2rem;
+    font-size: 3rem;
     color: #FFFFFF;
     text-decoration: none;
     margin-left: 24px;
@@ -70,7 +70,7 @@ nav ul li a {
     color: #ffffff;
     text-decoration: none;
     font-family: "ff-market-web-pro-condensed", sans-serif;
-    font-size: 1.2rem;
+    font-size: 2rem;
     transition: color .3s ease;
 }
 nav ul li a:hover {
@@ -161,8 +161,9 @@ nav ul li a:hover {
 }
 .values h2 {
     text-align: center;
-    font-size: 2.5rem;
+    font-size: 3rem;
     margin-bottom: 3rem;
+    color: white;
 }
 .values-container {
     display: flex;
@@ -185,7 +186,7 @@ nav ul li a:hover {
     padding: 2rem;
 }
 .value-card h3 {
-    font-size: 2rem;
+    font-size: 2.5rem;
     color: #7b1126;
     margin-bottom: 1 rem;
 }
@@ -193,6 +194,12 @@ nav ul li a:hover {
     font-size: 3rem;
     color: #231f20;
     margin-bottom: 1.5rem;
+}
+.values {
+    background-image: url(../images/22.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
 }
 /* Footer */
 .footer {
@@ -288,6 +295,203 @@ nav ul li a:hover {
         padding: 1.5rem
     }
     .welcome-text h2 {
+        font-size: 2rem;
+    }
+}
+/* Menu Page Header */
+.menu-header {
+    height: 54vh;
+    background:linear-gradient(0deg, #1115, #111),url("../images/steak.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 70px;
+    font-size: 2rem;
+}
+.menu-header-content {
+    color: #FFFFFF;
+    max-width: 800px;
+    padding: 2rem;
+}
+.menu-header p {
+    font-size: 1.5rem;
+}
+/* Featured Dish */
+.featured-dish {
+    padding:5rem 0 3rem;
+    background-color: #fff;
+}
+.featured-dish-container {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px grey;
+    position: relative;
+}
+.featured-dish-image {
+    flex: 1;
+    height: 400px;
+    background-image: url(../images/featured\ dish.jpg);
+    background-size: cover;
+    background-position: center;
+    margin-left: 20px;
+    border-radius: 8px;
+}
+.featured-dish-content {
+    flex: 1;
+    padding: 3rem
+}
+.featured-dish h2 {
+    font-size: 3rem;
+    color: #231f20;
+    margin-bottom: .5rem;
+}
+.featured-tag {
+    display: inline-block;
+    background-color: #7b1126;
+    color: #FFFFFF;
+    padding: .3rem .8rem;
+    border-radius: 20px;
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+    font-family: 'Market Pro Condensed Med', sans-serif;
+}
+.dish-price {
+    font-family:'Market Pro Condensed Med', sans-serif;
+    font-size: 1.5rem;
+    color: #7B1126;
+    font-weight: bold;
+    margin-top: 1rem;
+}
+/* Menu Categories */
+.menu-section {
+    padding: 4rem 0;
+    position: relative;
+}
+.menu-section:nth-of-type(odd) {
+    background-color: #fff;
+}
+.menu-section:nth-of-type(even) {
+    background-color: #f8f8f8;
+}
+/* This CSS code creates an alternating background color pattern for menu 
+sections. Elements with the class "menu-section" that are in odd positions
+(first, third, fifth, etc.) receive a white background (#fff), while those in 
+even positions (second, fourth, sixth, etc.) get a light gray background (#f8f8f8) */
+.menu-section h2 {
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 3rem;
+    padding-bottom: 15px;
+    border-bottom: 2px solid #7b1126;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2.5rem;
+}
+.menu-item {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+.menu-item-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    flex-shrink: 0;
+    border: 3px solid #fff;
+    box-shadow: 0 3px 10px gray;
+}
+.menu-item-content {
+    flex: 1;
+}
+.menu-item-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin: .5rem;
+}
+.menu-item-name {
+    font-family:'Market Pro Condensed Med', sans-serif;
+    font-size: 1.4rem;
+    color: #231f20;
+    padding-right: 5px;
+    position: relative;
+    z-index: 1;
+}
+.menu-item-price {
+    font-family:'Market Pro Condensed Med', sans-serif;
+    font-size: 1rem;
+    color: #7b1126;
+    font-weight: bold;
+    padding-left: 5px;
+    position: relative;
+    z-index: 1;
+}
+.menu-item-description {
+    font-size: .9rem;
+    color: #555;
+}
+.menu-note {
+    font-size: .8rem;
+    text-align: center;
+    font-style: italic;
+    margin-top: 2rem;
+    color: #666;
+}
+/* Menu Media Queries */
+@media (max-width: 992) {
+    .menu-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+}
+@media (max-width:768px) {
+    .featured-dish-container {
+        flex-direction: column;
+    }
+    .featured-dish-image {
+        flex-direction: column;
+    }
+    .featured-dish-content {
+        padding: 2rem;
+    }
+    .menu-item {
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
+    }
+    .menu-item-header {
+        flex-direction: column;
+        align-items: center;
+        gap: .5rem;
+    }
+    .menu-items-price {
+        padding: .2rem .8rem;
+        background-color: #f8f8f8;
+        border-radius: 4px;
+    }
+}
+@media (max-width:480px) {
+    .menu-header h1 {
+        font-size: 2rem;
+    }
+    .featured-dish-content {
+        padding: 1.5rem;
+    }
+    .featured-dish-h2 {
         font-size: 2rem;
     }
 }
