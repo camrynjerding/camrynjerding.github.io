@@ -164,6 +164,7 @@ nav ul li a:hover {
     font-size: 4rem;
     margin-bottom: 3rem;
     color: white;
+    
 }
 .values-container {
     display: flex;
@@ -191,6 +192,10 @@ nav ul li a:hover {
     font-size: 2.5rem;
     color: #7b1126;
     margin-bottom: 1 rem;
+    text-align: center;
+}
+.value-card p {
+    text-align: center;
 }
 .value-card-icon {
     font-size: 3rem;
