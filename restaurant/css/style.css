@@ -40,7 +40,7 @@ p {
     font-size: 1rem;
 }
 /* Header & Navigtation */
-.header-container {
+.header {
     background-color: #231f20;
     padding: 1rem 0;
     position: fixed;
@@ -48,6 +48,11 @@ p {
     top: 0;
     z-index: 100;
     box-shadow: 0 2px 5px gray ;
+}
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
      /*This means the header is fixed at the top of the browser window with
      no space btn the header and the top edge of the screen creating a sticky 
@@ -59,6 +64,12 @@ p {
     text-decoration: none;
     margin-left: 24px;
 }
+nav{
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 24px;
+}
 nav ul { 
     display: flex;
     list-style: none;
@@ -69,12 +80,26 @@ nav ul li {
 nav ul li a {
     color: #ffffff;
     text-decoration: none;
-    font-family: "ff-market-web-pro-condensed", sans-serif;
-    font-size: 2rem;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
     transition: color .3s ease;
+    letter-spacing: .5px;
 }
 nav ul li a:hover {
     color: #BCBEC0;
+}
+.nav-cta {
+    margin-left: 2rem;
+    background-color: #7b1126;
+    padding: .5rem 1.2rem;
+    border-radius: 4px;
+    color: #FFFFFF;
+    font-weight: 600;
+    text-decoration: none;
+}
+.nav-cta:hover {
+    background-color: #5a0d1c;
 }
 .mobile-menu-btn {
     display: none;
@@ -172,21 +197,24 @@ nav ul li a:hover {
     gap: 2rem;
 }
 .value-card {
+    display: flex;
     flex: 1;
-    width: 500px;
-    margin: auto;
-    margin-bottom: 10px;
     background-color: #FFFFFF;
     border-radius: 8px;
     overflow: hidden;
     box-shadow: 0 5px 15px grey;
     transition: transform .3s ease;
+    height: 100%;
+    margin: 10px;
 }
 .value-card:hover {
-    transform: translatey(-10px)
+    transform: translatey(-10px);
+    box-shadow: 0 10px 25px grey;
 }
 .value-card-inner {
     padding: 2rem;
+    display: flex;
+    flex-direction: column;
 }
 .value-card h3 {
     font-size: 2.5rem;
@@ -258,52 +286,6 @@ nav ul li a:hover {
     font-size: 2rem;
     color: #FFFFFF;
     margin-bottom: 1rem;
-}
-/* Media Quries */
-@media (max-width:768px) {
-    nav ul {
-        display: none;
-    }
-    .mobile-menu-btn {
-        display: block;
-    }
-    .hero h1 {
-        font-size: 2.5rem;
-    }
-    .welcome-container {
-        flex-direction: column;
-    }
-    .welcome-image, .welcome-text {
-        flex: none;
-        width: 100%;
-    }
-    .values-container {
-        flex-direction: column;
-    }
-    .value-card {
-        margin-bottom:1.5
-    }
-    .footer-section {
-        flex:100%;
-        margin-bottom: 2rem;
-    }
-}
-@media (max-width: 480px) {
-    .hero h1 {
-        font-size: 2rem;
-    }
-    .hero p {
-        font-size: 1rem;
-    }
-    .welcome, .values {
-        padding: 3rem 0
-    }
-    .value-card-inner {
-        padding: 1.5rem
-    }
-    .welcome-text h2 {
-        font-size: 2rem;
-    }
 }
 /* Menu Page Header */
 .menu-header {
@@ -458,47 +440,60 @@ even positions (second, fourth, sixth, etc.) get a light gray background (#f8f8f
     margin-top: 2rem;
     color: #666;
 }
-/* Menu Media Queries */
-@media (max-width: 992) {
+/* Media Queries */
+@media screen and (max-width: 992px) {
+    .values-container {
+        display: grid;
+        flex-wrap: wrap;
+        justify-content: center;
+        grid-template-columns: repeat (3,1fr);
+        gap: 1.5rem;
+    }
     .menu-grid {
         grid-template-columns: 1fr;
         gap: 2rem;
     }
 }
-@media (max-width:768px) {
-    .featured-dish-container {
+@media screen and (max-width: 768px) {
+    .header-container {
         flex-direction: column;
     }
-    .featured-dish-image {
+    .mobile-menu-btn {
+        display: block;
+    }
+    .nav-cta {
+        display: none;
+    }
+    .welcome-container, .featured-dish-container {
         flex-direction: column;
     }
-    .featured-dish-content {
-        padding: 2rem;
+    .welcome-image, .featured-dish-image {
+        width: 100%;
+        height: 300px;
+    }
+    .values-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .menu-gird {
+        grid-template-columns: 1fr;
+    }
+}
+@media screen and (max-width: 576px) {
+    .hero h1 {
+        font-size: 2.5rem;
     }
     .menu-item {
         flex-direction: column;
         text-align: center;
-        gap: 1rem;
     }
     .menu-item-header {
         flex-direction: column;
         align-items: center;
-        gap: .5rem;
+        background: none;
     }
-    .menu-items-price {
-        padding: .2rem .8rem;
-        background-color: #f8f8f8;
+    .menu-item-price {
+        margin-top: .5rem;
+        padding: .2rem, .8rem;
         border-radius: 4px;
-    }
-}
-@media (max-width:480px) {
-    .menu-header h1 {
-        font-size: 2rem;
-    }
-    .featured-dish-content {
-        padding: 1.5rem;
-    }
-    .featured-dish-h2 {
-        font-size: 2rem;
     }
 }
