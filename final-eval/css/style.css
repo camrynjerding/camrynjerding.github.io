@@ -12,7 +12,8 @@ body {
     font-family: "Roboto", sans-serif;
     line-height: 1.6;
     color: #333;
-    background-color: #f5f5f5;
+    background-color: #021e3c;
+    background-image: url(../images/medium-american-football-stadium-with-green-field-and-lights-generative-ai.jpg), linear-gradient(135deg, #021e3c 0%, #1a3a5f 100%);
     padding: 20px;
 }
 /* Container */
@@ -22,7 +23,8 @@ body {
     background-color: #fff;
     padding: 30px;
     border-radius: 10px;
-    box-shadow: 0 0 20px grey;
+    box-shadow: 0 10px 50px white;
+    border: 1px solid #e0e0e0;
 }
 /* Header */
 .header {
@@ -66,6 +68,22 @@ body {
 .team {
     flex: 1;
     text-align: center;
+    padding: 15px;
+    background: linear-gradient(to bottom, #f8f8f8, #ffffff);
+    border-radius: 12px;
+    border: 1px solid #e0e0e0;
+    box-shadow: 0 4px 6px grey;
+    transition: all .3s ease;
+}
+.team:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px grey;
+}
+.team:first-child{ 
+    background: linear-gradient(to right,#a61c30, #8a1539);
+}
+.team:last-child {
+    background: linear-gradient(to right, #0c2340, #4b92db);
 }
 .team-img {
     width: 100%;
@@ -79,6 +97,7 @@ body {
     font-weight: 700;
     text-transform: uppercase;
     margin-bottom: 5px;
+    color: white;
 }
 .vs {
     font-family: 'Montserrat', sans-serif;
